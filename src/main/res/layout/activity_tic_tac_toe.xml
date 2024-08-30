@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title for Tic-Tac-Toe Game -->
+        <TextView
+            android:id="@+id/gameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="틱택토 미니게임"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#4CAF50"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Game Description -->
+        <TextView
+            android:id="@+id/ticTacToeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="게임하는 방법: 3x3 격자에서 X와 O를 번갈아가며 표시하여 세 칸을 먼저 맞추는 사람이 승리합니다."
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            android:background="#005DFF"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <!-- Player vs Computer Instructions -->
+        <TextView
+            android:id="@+id/gameInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="플레이어는 X, 컴퓨터는 O입니다."
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="#005DFF"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Tic-Tac-Toe GridLayout and Buttons -->
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:padding="16dp"
+            android:background="#000000">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:textSize="24sp"/>
+            <Button
+                android:id="@+id/button2"
+                android:backgroundTint="#03A9F4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:textSize="24sp"/>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:textSize="24sp"/>
+            <Button
+                android:id="@+id/button4"
+                android:backgroundTint="#03A9F4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:textSize="24sp"/>
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:textSize="24sp"/>
+            <Button
+                android:id="@+id/button6"
+                android:backgroundTint="#03A9F4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:textSize="24sp"/>
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:textSize="24sp"/>
+            <Button
+                android:id="@+id/button8"
+                android:backgroundTint="#03A9F4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:textSize="24sp"/>
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:textSize="24sp"/>
+
+        </GridLayout>
+
+        <!-- Button to switch to Blackjack Activity -->
+        <Button
+            android:id="@+id/switchToBlackjackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FB0000"
+            android:text="블랙잭 미니게임으로 이동"
+            android:layout_marginTop="32dp"/>
+
+        <!-- Button to switch to Board Game Activity -->
+        <Button
+            android:id="@+id/switchToBoardGameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF5722"
+            android:text="보드 미니게임으로 이동"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</ScrollView>
